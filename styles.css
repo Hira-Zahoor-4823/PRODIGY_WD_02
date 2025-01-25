@@ -1,0 +1,355 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+
+/* Container */
+.container {
+    margin-top: 100px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Stopwatch Section */
+.stopwatch-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-img {
+    max-width: 60%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Stopwatch Display */
+.time-display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startPauseBtn {
+    background: #28a745;
+    color: #fff;
+}
+
+#startPauseBtn:hover {
+    background: #218838;
+}
+
+#resetBtn {
+    background: #dc3545;
+    color: #fff;
+}
+
+#resetBtn:hover {
+    background: #c82333;
+}
+
+#lapBtn {
+    background: #ffc107;
+    color: #000;
+}
+
+#lapBtn:hover {
+    background: #e0a800;
+}
+
+/* Lap Times */
+.laps-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.laps-list li {
+    background: #444;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* Info Section */
+.info-section {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.info-img {
+    max-width: 60%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Contact Page Layout */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 120px; 
+    padding: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #28a745;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+/* Features Page */
+.features-container {
+    margin-top: 120px;
+    padding: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.features-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.features-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Feature Section */
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.feature-item h2 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    color: #ffc107;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Additional Features */
+.feature-extra {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.feature-extra h2 {
+    font-size: 2rem;
+    color: #ffc107;
+}
+
+.feature-extra ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-extra ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

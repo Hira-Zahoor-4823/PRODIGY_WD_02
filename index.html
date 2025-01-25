@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Time Tracker Pro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stopwatch-section">
+            <img src="stopwatch-banner.jpg" alt="Stopwatch Banner" class="banner-img">
+            <h1>Track Your Time Efficiently</h1>
+            <p>Stay on top of your productivity by tracking your time with our easy-to-use and stylish stopwatch application. 
+			Record lap times and boost your efficiency!</p>
+
+            <div class="stopwatch">
+                <div class="time-display">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">000</span>
+                </div>
+                <div class="buttons">
+                    <button id="startPauseBtn" onclick="startPause()">Start</button>
+                    <button id="resetBtn" onclick="reset()">Reset</button>
+                    <button id="lapBtn" onclick="recordLap()">Lap</button>
+                </div>
+                <ul id="laps" class="laps-list"></ul>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <img src="time-management.jpg" alt="Time Management" class="info-img">
+            <h2>Why Use a Stopwatch?</h2>
+            <p>Time management is crucial for productivity. Our stopwatch helps you track your progress, stay focused, 
+			and achieve your goals efficiently.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
